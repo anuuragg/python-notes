@@ -1,12 +1,9 @@
-# Function to simulate calculator and demonstrate operators in Python
 def calculator():
     print("Welcome to the Python Operators Demonstration Program!")
 
-    # Step 1: Get two integers from the user
     int1 = int(input("Enter the first integer: "))
     int2 = int(input("Enter the second integer: "))
 
-    # Step 2: Perform arithmetic operations
     print("\nArithmetic Operations:")
     print(f"Addition: {int1} + {int2} = {int1 + int2}")
     print(f"Subtraction: {int1} - {int2} = {int1 - int2}")
@@ -16,7 +13,6 @@ def calculator():
     print(f"Modulus: {int1} % {int2} = {int1 % int2}")
     print(f"Exponentiation: {int1} ** {int2} = {int1 ** int2}")
 
-    # Step 3: Perform logical operations
     bool_input = input("\nEnter a boolean value (True or False): ").strip().lower() == "true"
     logical_operator = input("Enter a logical operator (and, or, not): ").strip().lower()
 
@@ -29,7 +25,6 @@ def calculator():
     else:
         print("Invalid logical operator.")
 
-    # Step 4: Perform bitwise operations
     print("\nBitwise Operations:")
     print(f"Bitwise AND: {int1} & {int2} = {int1 & int2}")
     print(f"Bitwise OR: {int1} | {int2} = {int1 | int2}")
@@ -38,7 +33,6 @@ def calculator():
     print(f"Left Shift {int1} by {int2} positions: {int1} << {int2} = {int1 << int2}")
     print(f"Right Shift {int1} by {int2} positions: {int1} >> {int2} = {int1 >> int2}")
 
-    # Step 5: Perform comparison operations
     print("\nComparison Operations:")
     print(f"Equal to: {int1} == {int2} = {int1 == int2}")
     print(f"Not equal to: {int1} != {int2} = {int1 != int2}")
@@ -47,13 +41,11 @@ def calculator():
     print(f"Greater than or equal to: {int1} >= {int2} = {int1 >= int2}")
     print(f"Less than or equal to: {int1} <= {int2} = {int1 <= int2}")
 
-    # Step 6: Use membership operators
     print("\nMembership Operations:")
     sample_list = [int1, int2, int1 + int2]
     print(f"{int1} in {sample_list} = {int1 in sample_list}")
     print(f"{int1 * 2} not in {sample_list} = {int1 * 2 not in sample_list}")
 
-    # Step 7: Use identity operators
     print("\nIdentity Operations:")
     a = [int1]
     b = [int1]
@@ -61,11 +53,9 @@ def calculator():
     print(f"a is not b: {a is not b}")
     print(f"a == b: {a == b}")
 
-    # Step 8: Use assignment operators
     print("\nAssignment Operations:")
     print(f"Initial value of int1: {int1}")
-    int1 += int2  # Using addition assignment
+    int1 += int2 
     print(f"After addition assignment (int1 += int2): {int1}")
 
-# Call the calculator function to start the program
 calculator()
