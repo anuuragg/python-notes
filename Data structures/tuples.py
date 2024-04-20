@@ -37,3 +37,7 @@ print (final_fruits.count("banana"))
 print(max(numbers))
 #min()
 print(min(numbers))
+
+#Deleting tuple
+del numbers
+#print(numbers)
