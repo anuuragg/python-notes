@@ -29,10 +29,10 @@ def delete_book():
     del_book_name = input("Enter the book name you want to delete: ")
     found = False
     for index in range(len(books)):
-        if books[index] == del_book_name
-        books.pop(index)
-        found = True
-        break
+        if books[index] == del_book_name:
+            books.pop(index)
+            found = True
+            break
     if not found:
         print("Book name is incorrect or is not present in the list :(")
 
