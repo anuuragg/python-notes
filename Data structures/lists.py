@@ -31,8 +31,37 @@ def delete_book():
     for index in range(len(books)):
         if books[index] == del_book_name:
             books.pop(index)
+            print(del_book_name +" deleted from the list")
             found = True
             break
     if not found:
         print("Book name is incorrect or is not present in the list :(")
 
+#Main function
+def main():
+    while True:
+        print("\nMenu:")
+        print("1. Display all books")
+        print("2. Add a new book")
+        print("3. Update a book")
+        print("4. Delete a book")
+        print("5. Exit")
+        
+        choice = input("Please enter your choice (1-5): ")
+        
+        if choice == "1":
+            display_books()
+        elif choice == "2":
+            add_book()
+        elif choice == "3":
+            update_book()
+        elif choice == "4":
+            delete_book()
+        elif choice == "5":
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
